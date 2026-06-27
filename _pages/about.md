@@ -25,7 +25,12 @@ Fun
 Outside of research, I enjoy skiing, playing piano and video gaming. My gaming interests also diverge, including Civ6, Splatoon etc.
 
 <section class="mobile-publications">
-  <h2 class="mobile-publications__title">Publications</h2>
+  <h1 class="mobile-publications__title">
+    Publications
+    {% if site.author.googlescholar %}
+      <a class="mobile-publications__scholar-button" href="{{ site.author.googlescholar }}">Google Scholar</a>
+    {% endif %}
+  </h1>
   <div class="wordwrap publications__intro">
     *: equal contribution; # corresponding author.
   </div>
